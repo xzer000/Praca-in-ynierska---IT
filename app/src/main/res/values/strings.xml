@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">praca_inzynierksa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">MainActivitymenu</string>
+    <string name="title_activity_odczyt">odczyt</string>
+    <string name="title_activity_sterowanie">sterowanie</string>
+    <string name="title_activity_ustawienia">ustawienia</string>
+
+</resources>

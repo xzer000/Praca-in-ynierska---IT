@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRL"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <Button android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aktualizuj"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:id="@+id/response"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button_ustawienia"
+        android:layout_below="@+id/update" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wyjście"
+        android:id="@+id/button_wyjscie"
+        android:height="50dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="#64fc3700"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ustawienia"
+        android:id="@+id/button_ustawienia"
+        android:height="50dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="#4600e000"
+        android:layout_above="@+id/button_wyjscie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sterowanie"
+        android:id="@+id/button_sterowanie"
+        android:height="50dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="#4600e000"
+        android:layout_below="@+id/button_wykresy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wykresy"
+        android:id="@+id/button_wykresy"
+        android:height="50dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="#4600e000"
+        android:layout_below="@+id/button_odczyt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odczyt"
+        android:id="@+id/button_odczyt"
+        android:height="50dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="#1e00e000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  Pokarm"
+        android:id="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp"
+        android:layout_marginTop="33dp"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_below="@+id/button_sterowanie" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  Oświetlenie"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  Wentylacja"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:showText="true"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignEnd="@+id/switch2"
+        android:layout_above="@+id/textView6" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch2"
+        android:showText="true"
+        android:layout_above="@+id/textView7"
+        android:layout_alignEnd="@+id/switch3"
+        android:layout_alignTop="@+id/textView6" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch3"
+        android:showText="true"
+        android:layout_toEndOf="@+id/update"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_above="@+id/switch4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  Ogrzewanie"
+        android:id="@+id/textView16"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch4"
+        android:showText="true"
+        android:layout_below="@+id/textView7"
+        android:layout_toRightOf="@+id/update"
+        android:layout_toEndOf="@+id/update" />
+
+</RelativeLayout>

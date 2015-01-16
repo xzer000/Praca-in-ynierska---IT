@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRL"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:focusable="true">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wyjście"
+        android:id="@+id/button_wyjscie"
+        android:height="50dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="#64fc3700"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ustawienia"
+        android:id="@+id/button_ustawienia"
+        android:height="50dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="#4600e000"
+        android:layout_above="@+id/button_wyjscie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sterowanie"
+        android:id="@+id/button_sterowanie"
+        android:height="50dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="#4600e000"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_above="@+id/button_ustawienia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wykresy"
+        android:id="@+id/button_wykresy"
+        android:height="50dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_above="@+id/button_sterowanie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#4600e000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odczyt"
+        android:id="@+id/button_odczyt"
+        android:height="50dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/buttonshape"
+        android:layout_above="@+id/button_wykresy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Inteligentne Terrarium"
+        android:id="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Aplikacja mobilna"
+        android:id="@+id/textView8"
+        android:textColor="#5e0c1b18"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
